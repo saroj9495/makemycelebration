@@ -1,0 +1,314 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f7f3eb;color:#191715;font-family:Inter,Arial,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}
+.site-header{height:78px;padding:0 5.5vw;display:flex;align-items:center;justify-content:space-between;background:#f7f3eb;border-bottom:1px solid #e2d4c0;position:sticky;top:0;z-index:20;backdrop-filter:blur(8px)}
+section{scroll-margin-top:90px}
+.brand{display:flex;flex-direction:column;font-family:"Cormorant Garamond",serif;color:#a96d31;line-height:.82}.brand span{font-size:17px;font-weight:700}.brand strong{font-size:23px}
+nav{display:flex;gap:23px;font-size:13px;font-weight:500}nav a:hover{color:#a96d31}
+.top-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:11px 18px;font-size:13px;font-weight:700}.top-cta,.primary{background:#a96d31;color:#fff}.secondary{border:1px solid #a96d31;color:#8e5b2b;background:transparent}
+.hero{min-height:calc(100vh - 78px);padding:5.5vw;display:grid;grid-template-columns:1fr .86fr;gap:5vw;align-items:center}
+.eyebrow{margin:0 0 10px;color:#a96d31;letter-spacing:2px;font-size:11px;font-weight:700}.hero h1,h2{font-family:"Cormorant Garamond",serif;font-weight:600;line-height:.95}
+.hero h1{font-size:clamp(50px,6.3vw,78px);margin:14px 0 21px}.hero h1 em{font-style:normal;color:#a96d31}.hero-lead{max-width:610px;font-size:17px;color:#5e574f}
+.actions{display:flex;gap:11px;margin-top:26px}.hero-image{height:min(66vh,610px);border-radius:180px 180px 16px 16px;overflow:hidden}.hero-image img,.split-image img,.portfolio-grid img{width:100%;height:100%;object-fit:cover}
+.section{padding:72px 5.5vw}.section-head{text-align:center;max-width:700px;margin:0 auto 42px}.section-head h2,.split-copy h2,.pricing h2,.contact h2{font-size:clamp(42px,4.6vw,60px);margin:10px 0 15px}.section-head>p:last-child{color:#625b52;margin:0}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service-grid article{background:#fffdf9;border:1px solid #e1d2bd;border-radius:16px;padding:24px;min-height:185px}.service-grid span{color:#a96d31;font-family:"Cormorant Garamond",serif;font-size:22px}.service-grid h3,.feature h3,.process-grid h3{font-family:"Cormorant Garamond",serif;font-size:25px;margin:16px 0 7px}.service-grid p{margin:0;color:#625b52;font-size:14px}
+.portfolio{background:#fffdf9}.portfolio-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:14px;max-width:1250px;margin:auto}.portfolio-grid figure{height:270px;margin:0;position:relative;overflow:hidden;border-radius:15px}.portfolio-grid figure.large{height:390px}.portfolio-grid figcaption{position:absolute;left:16px;bottom:14px;background:rgba(25,23,21,.78);color:#fff;padding:7px 11px;border-radius:999px;font-size:11px}.portfolio-note{text-align:center;color:#8a8176;font-size:12px;margin:16px 0 0}
+.split{display:grid;grid-template-columns:1fr 1fr;background:#eee4d6}.split-image{min-height:540px}.split-copy{padding:6vw 6vw}.feature{padding:15px 0;border-bottom:1px solid #d5c3aa}.feature h3{margin:0 0 4px}.feature p{margin:0;color:#625b52;font-size:14px}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);max-width:1250px;margin:auto}.process-grid>div{padding:24px;border-left:1px solid #d6c5ad}.process-grid strong{font-family:"Cormorant Garamond",serif;color:#a96d31;font-size:38px}.process-grid h3{margin:13px 0 7px}.process-grid p{margin:0;color:#625b52;font-size:14px}
+.pricing{margin:0 5.5vw 88px;padding:42px 4.5vw;background:#1d1a17;color:#fff;border-radius:22px;display:grid;grid-template-columns:1.1fr 1fr auto;align-items:center;gap:30px}.pricing h2{color:#fff}.pricing p:not(.eyebrow){color:#d6cec4;margin:0}.pricing-factors{display:grid;grid-template-columns:1fr 1fr;gap:9px 18px}.pricing-factors span{font-size:10px;letter-spacing:1.1px;color:#d9a76d;border-bottom:1px solid #4b433c;padding-bottom:5px}
+.contact{padding:72px 5.5vw;background:#eadcca;display:grid;grid-template-columns:1.15fr .85fr;gap:65px}.contact-copy{padding-top:18px}.contact-copy>p:last-child{max-width:580px;font-size:17px;color:#625b52}.contact-card{background:#fffdf9;border:1px solid #dbc7ad;border-radius:20px;padding:30px}.contact-card div{margin-bottom:17px}.contact-card small{display:block;color:#a96d31;font-size:10px;letter-spacing:1.4px;font-weight:700;margin-bottom:2px}.contact-card a:not(.btn),.contact-card span{font-size:15px}.contact-card a:not(.btn){text-decoration:underline;text-underline-offset:3px}.full{width:100%;margin-top:4px}
+footer{padding:25px 5.5vw;background:#171512;color:#b8afa4;display:flex;justify-content:space-between;font-size:11px;letter-spacing:1px}footer strong{color:#d7a66c}
+@media(max-width:900px){.site-header{height:auto;padding:16px 5vw;flex-wrap:wrap;gap:12px}.top-cta{display:none}nav{order:3;width:100%;justify-content:center;gap:16px;overflow:auto;font-size:12px}.hero,.split,.contact{grid-template-columns:1fr}.hero{padding:55px 5vw}.hero-image{height:480px;order:-1}.service-grid{grid-template-columns:1fr 1fr}.process-grid{grid-template-columns:1fr 1fr}.split-image{min-height:500px}.pricing{grid-template-columns:1fr;margin:0 5vw 70px}.pricing-factors{max-width:500px}}
+@media(max-width:560px){.hero h1{font-size:48px}.hero-image{height:400px}.actions{flex-direction:column}.btn{width:100%}.section{padding:72px 5vw}.service-grid,.process-grid,.portfolio-grid{grid-template-columns:1fr}.portfolio-grid figure,.portfolio-grid figure.large{height:280px}.contact{padding:72px 5vw}footer{flex-direction:column;gap:8px}}
+/* V4 layout corrections */
+.section { padding-top: 56px; padding-bottom: 56px; }
+.hero { min-height: calc(100vh - 78px); padding-top: 54px; padding-bottom: 54px; }
+.portfolio { padding-top: 54px; padding-bottom: 54px; }
+.split { min-height: 0; align-items: stretch; }
+.split-image { min-height: 0; height: 460px; max-height: 460px; overflow: hidden; }
+.split-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.split-copy { padding: 56px 6vw; }
+.why-us { padding-top: 54px; padding-bottom: 54px; }
+.contact { padding-top: 56px; padding-bottom: 56px; }
+
+/* Prevent large blank visual gaps between major sections */
+section + section { margin-top: 0; }
+
+@media (max-width: 800px) {
+  .section { padding-top: 42px; padding-bottom: 42px; }
+  .hero { min-height: auto; padding-top: 42px; padding-bottom: 42px; }
+  .split-image { height: 300px; max-height: 300px; }
+  .split-copy { padding: 42px 7vw; }
+  .portfolio { padding-top: 42px; padding-bottom: 42px; }
+  .contact { padding-top: 42px; padding-bottom: 42px; }
+}
+
+/* V5: tighter, balanced sections */
+.section { padding-top: 42px; padding-bottom: 42px; }
+.portfolio { padding-top: 42px; padding-bottom: 42px; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
+.portfolio-grid > * { height: 300px; min-height: 300px; }
+.portfolio-grid img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: stretch; min-height: 0; }
+.split-image { height: 420px; max-height: 420px; min-height: 420px; overflow: hidden; }
+.split-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.split-copy { min-height: 420px; padding: 42px 5vw; display: flex; flex-direction: column; justify-content: center; }
+
+.why-us { padding-top: 42px; padding-bottom: 42px; }
+.contact { padding-top: 44px; padding-bottom: 44px; }
+
+/* Keep navigation anchors from hiding content under the fixed header. */
+section { scroll-margin-top: 82px; }
+
+@media (max-width: 800px) {
+  .section { padding-top: 34px; padding-bottom: 34px; }
+  .portfolio { padding-top: 34px; padding-bottom: 34px; }
+  .portfolio-grid { grid-template-columns: 1fr; gap: 14px; }
+  .portfolio-grid > * { height: 240px; min-height: 240px; }
+  .split { grid-template-columns: 1fr; }
+  .split-image { height: 280px; max-height: 280px; min-height: 280px; }
+  .split-copy { min-height: auto; padding: 34px 7vw; }
+  .why-us { padding-top: 34px; padding-bottom: 34px; }
+  .contact { padding-top: 34px; padding-bottom: 34px; }
+}
+
+/* =========================================================
+   V7 FINAL FIXES — genuinely different imagery + balance
+   ========================================================= */
+
+/* WHAT WE CAN CREATE
+   Three equal cards, no oversized first card. */
+.portfolio {
+  padding: 52px 5.5vw 56px;
+}
+.portfolio .section-head {
+  margin-bottom: 30px;
+}
+.portfolio-grid {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 18px;
+}
+.portfolio-grid > figure,
+.portfolio-grid > figure.large {
+  height: 300px !important;
+  min-height: 300px !important;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+}
+.portfolio-grid > figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.portfolio-grid > figure:nth-child(1) img { object-position: center 48%; }
+.portfolio-grid > figure:nth-child(2) img { object-position: center 48%; }
+.portfolio-grid > figure:nth-child(3) img { object-position: center 48%; }
+
+/* WHY CHOOSE US
+   The previous imbalance came from generic .split rules and the
+   image being taller than the content. Target #why directly. */
+#why.split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: stretch;
+  min-height: 0;
+  background: #eee4d6;
+}
+#why .split-image {
+  height: 500px !important;
+  min-height: 500px !important;
+  max-height: 500px !important;
+  overflow: hidden;
+}
+#why .split-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+#why .split-copy {
+  min-height: 500px !important;
+  padding: 48px 5vw !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#why .split-copy h2 {
+  max-width: 700px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+#why .feature {
+  padding: 12px 0;
+}
+#why .feature h3 {
+  margin-bottom: 4px;
+}
+#why .feature p {
+  max-width: 680px;
+}
+
+/* Keep section transitions tight and intentional. */
+.portfolio + #why {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px;
+  }
+  .portfolio-grid > figure,
+  .portfolio-grid > figure.large {
+    height: 250px !important;
+    min-height: 250px !important;
+  }
+
+  #why.split {
+    grid-template-columns: 1fr;
+  }
+  #why .split-image {
+    height: 330px !important;
+    min-height: 330px !important;
+    max-height: 330px !important;
+  }
+  #why .split-copy {
+    min-height: auto !important;
+    padding: 40px 7vw !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .portfolio-grid > figure,
+  .portfolio-grid > figure.large {
+    height: 245px !important;
+    min-height: 245px !important;
+  }
+  #why .split-image {
+    height: 280px !important;
+    min-height: 280px !important;
+    max-height: 280px !important;
+  }
+}
+
+/* =========================================================
+   V8 — realistic intimate-event portfolio + Why Us balance
+   ========================================================= */
+
+/* WHAT WE CAN CREATE */
+.portfolio {
+  padding: 52px 5.5vw 58px;
+}
+.portfolio-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 18px;
+}
+.portfolio-grid > figure,
+.portfolio-grid > figure.large {
+  height: 310px !important;
+  min-height: 310px !important;
+  max-height: 310px !important;
+  border-radius: 16px;
+}
+.portfolio-grid > figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
+.portfolio-grid > figure:nth-child(1) img { object-position: center center; }
+.portfolio-grid > figure:nth-child(2) img { object-position: center center; }
+.portfolio-grid > figure:nth-child(3) img { object-position: center center; }
+
+/* WHY CHOOSE US
+   Content comes first, image sits slightly lower so its visual mass
+   aligns with the feature list instead of competing with the heading. */
+#why.why-v8 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  min-height: 0;
+  background: #eee4d6;
+  padding: 42px 5.5vw 54px;
+  column-gap: clamp(34px, 5vw, 80px);
+}
+#why.why-v8 .split-copy {
+  min-height: 0 !important;
+  padding: 0 !important;
+  justify-content: center;
+}
+#why.why-v8 .split-copy h2 {
+  max-width: 620px;
+  margin: 8px 0 20px;
+}
+#why.why-v8 .feature {
+  padding: 12px 0;
+}
+#why.why-v8 .feature p {
+  max-width: 620px;
+}
+#why.why-v8 .split-image {
+  height: 430px !important;
+  min-height: 430px !important;
+  max-height: 430px !important;
+  overflow: hidden;
+  margin-top: 42px; /* intentionally lower than the content block */
+  border-radius: 18px;
+}
+#why.why-v8 .split-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .portfolio-grid > figure,
+  .portfolio-grid > figure.large {
+    height: 260px !important;
+    min-height: 260px !important;
+    max-height: 260px !important;
+  }
+
+  #why.why-v8 {
+    grid-template-columns: 1fr;
+    padding: 42px 7vw 48px;
+    row-gap: 22px;
+  }
+  #why.why-v8 .split-image {
+    height: 330px !important;
+    min-height: 330px !important;
+    max-height: 330px !important;
+    margin-top: 0;
+    order: 2;
+  }
+}
+
+@media (max-width: 560px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .portfolio-grid > figure,
+  .portfolio-grid > figure.large {
+    height: 245px !important;
+    min-height: 245px !important;
+    max-height: 245px !important;
+  }
+  #why.why-v8 .split-image {
+    height: 280px !important;
+    min-height: 280px !important;
+    max-height: 280px !important;
+  }
+}
